@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Demo</title>
+  <link rel="stylesheet" href="stylez.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Web Demo Project</h1>
+  </header>
+
+  <nav>
+    <a href="#contact">Contact</a>
+    <a href="#todo">To-Do List</a>
+  </nav>
+
+  <div class="container">
+    <!-- Contact Form -->
+    <section id="contact" class="form-section">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Dynamic To-Do List -->
+    <section id="todo" class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter new task" />
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>

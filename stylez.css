@@ -1,0 +1,95 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  background-color: #ccc;
+}
+
+header {
+  background: #344;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+
+nav a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #666;
+}
+
+/* Layout using Flexbox for container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.form-section,
+.todo-section {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input, textarea, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
